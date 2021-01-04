@@ -42,7 +42,7 @@
         context.drawImage(bird, birdX, birdY, birdSize * (524/374), birdSize);
         birdY -= birdDY -= 0.5;
         pipeX-= 8
-        pipeX < -birdSize && resetPipes()
+        pipeX < -birdSize && resetPipes() // pipe disappearing mechanics
         birdY < 0 ?  (birdY=0):"";
         context.fillStyle= "green"
         context.fillRect(pipeX,0,birdSize,topPipeSize)// top pipe
